@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/OpenSourcePolitics/decidim-module-navbar_links
+  revision: fd49c035090fe3fd84547896b7af862c2cbcee51
+  branch: 0.23-stable
+  specs:
+    decidim-navbar_links (0.23.1)
+      decidim-core (= 0.23.1)
+
+GIT
   remote: https://github.com/Platoniq/decidim-module-navigation_maps
   revision: d816e695300a9ccc9e424a8986cd51ad256fa722
   specs:
@@ -121,7 +129,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    colorize (0.8.1)
     concurrent-ruby (1.1.7)
     crack (0.4.5)
       rexml
@@ -196,15 +203,6 @@ GEM
       decidim-core (= 0.23.1)
       jquery-rails (~> 4.3)
       redcarpet (~> 3.4)
-    decidim-conferences (0.23.1)
-      decidim-core (= 0.23.1)
-      decidim-meetings (= 0.23.1)
-      wicked_pdf (~> 1.4)
-      wkhtmltopdf-binary (~> 0.12)
-    decidim-consultations (0.23.1)
-      decidim-admin (= 0.23.1)
-      decidim-comments (= 0.23.1)
-      decidim-core (= 0.23.1)
     decidim-core (0.23.1)
       active_link_to (~> 1.0)
       anchored (>= 1.1.0)
@@ -303,17 +301,6 @@ GEM
       wkhtmltopdf-binary (~> 0.12)
     decidim-generators (0.23.1)
       decidim-core (= 0.23.1)
-    decidim-initiatives (0.23.1)
-      decidim-admin (= 0.23.1)
-      decidim-comments (= 0.23.1)
-      decidim-core (= 0.23.1)
-      decidim-verifications (= 0.23.1)
-      kaminari (~> 1.2, >= 1.2.1)
-      origami (~> 2.1)
-      virtus-multiparams (~> 0.1)
-      wicked (~> 1.3)
-      wicked_pdf (~> 1.4)
-      wkhtmltopdf-binary (~> 0.12)
     decidim-meetings (0.23.1)
       cells-erb (~> 0.1.0)
       cells-rails (~> 0.0.9)
@@ -571,8 +558,6 @@ GEM
     omniauth-twitter (1.4.0)
       omniauth-oauth (~> 1.1)
       rack
-    origami (2.1.0)
-      colorize (~> 0.7)
     orm_adapter (0.5.0)
     paper_trail (10.3.1)
       activerecord (>= 4.2)
@@ -785,8 +770,6 @@ GEM
       coercible (~> 1.0)
       descendants_tracker (~> 0.0, >= 0.0.3)
       equalizer (~> 0.0, >= 0.0.9)
-    virtus-multiparams (0.1.1)
-      virtus (~> 1.0)
     warden (1.2.9)
       rack (>= 2.0.9)
     web-console (3.7.0)
@@ -801,8 +784,6 @@ GEM
     websocket-driver (0.7.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
-    wicked (1.3.4)
-      railties (>= 3.0.7)
     wicked_pdf (1.4.0)
       activesupport
     wisper (2.0.1)
@@ -819,33 +800,12 @@ DEPENDENCIES
   byebug (~> 11.0)
   daemons
   decidim (= 0.23.1)
-  decidim-accountability
-  decidim-admin
-  decidim-api
-  decidim-assemblies
-  decidim-blogs
-  decidim-budgets
   decidim-calendar
-  decidim-comments
-  decidim-conferences
-  decidim-consultations
-  decidim-core
-  decidim-debates
   decidim-dev (= 0.23.1)
   decidim-elections
-  decidim-forms
-  decidim-generators
-  decidim-initiatives
-  decidim-meetings
+  decidim-navbar_links!
   decidim-navigation_maps!
-  decidim-pages
-  decidim-participatory_processes
-  decidim-proposals
-  decidim-sortitions
-  decidim-surveys
-  decidim-system
   decidim-templates
-  decidim-verifications
   delayed_job_active_record
   faker (~> 1.9)
   figaro
