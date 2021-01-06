@@ -1,0 +1,34 @@
+server {
+
+    server_name badragaz-taminatal.ch;
+    client_max_body_size 32M;
+
+    passenger_enabled on;
+    passenger_ruby /home/decidim/.rbenv/shims/ruby;
+
+    rails_env    production;
+    root         /home/decidim/decidim-app/public;
+
+    listen [::]:443 ssl ipv6only=on; # managed by Certbot
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/badragaz-taminatal.ch/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/badragaz-taminatal.ch/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+
+}
+
+server {
+    if ($host = badragaz-taminatal.ch) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+    listen 80;
+    listen [::]:80 ipv6only=on;
+
+    server_name badragaz-taminatal.ch;
+    return 404; # managed by Certbot
+
+
+}
