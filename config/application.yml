@@ -1,7 +1,0 @@
-DATABASE_URL: postgres://mohammed:mohammed@localhost/decidim_prod
-SECRET_KEY_BASE: 0ec5c0ea6ca185b35de0534f817d030bb2c00164000dfba1c07db664559d6e79ce6d1a3439f8b1f0a2816e13e4833624fe5fa124afb85d351e071a08ae715bfc
-
-SMTP_USERNAME: badragaz.taminatal@gmail.com
-SMTP_PASSWORD: wrkbicohkgcwmcfb
-SMTP_ADDRESS: smtp.gmail.com
-SMTP_DOMAIN: gmail.com
