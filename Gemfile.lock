@@ -315,6 +315,9 @@ GEM
       decidim-core (= 0.23.1)
     decidim-participatory_processes (0.23.1)
       decidim-core (= 0.23.1)
+    decidim-process_groups_content_block (0.14.4)
+      decidim-core (~> 0.14)
+      decidim-participatory_processes (~> 0.14)
     decidim-proposals (0.23.1)
       acts_as_list (~> 0.9)
       cells-erb (~> 0.1.0)
@@ -800,11 +803,17 @@ DEPENDENCIES
   byebug (~> 11.0)
   daemons
   decidim (= 0.23.1)
+  decidim-accountability
+  decidim-blogs
   decidim-calendar
+  decidim-comments
   decidim-dev (= 0.23.1)
   decidim-elections
   decidim-navbar_links!
   decidim-navigation_maps!
+  decidim-pages
+  decidim-process_groups_content_block
+  decidim-proposals
   decidim-templates
   delayed_job_active_record
   faker (~> 1.9)

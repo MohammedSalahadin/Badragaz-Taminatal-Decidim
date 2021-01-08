@@ -21,13 +21,19 @@ gem "wicked_pdf", "~> 1.4"
 gem "figaro"
 
 #gem "decidim-results"
-#gem "decidim-plans"
 gem "decidim-elections"
 gem "decidim-templates"
 gem "decidim-calendar"
 #gem "decidim-process_groups_content_block" >> Disable due to the error when updating
 gem "decidim-navigation_maps", git: "https://github.com/Platoniq/decidim-module-navigation_maps"
 gem 'decidim-navbar_links', git: "https://github.com/OpenSourcePolitics/decidim-module-navbar_links", branch: "0.23-stable"
+gem 'decidim-pages'
+gem 'decidim-proposals'
+gem 'decidim-comments'
+#gem "decidim-plans"
+gem "decidim-process_groups_content_block"
+gem 'decidim-accountability'
+gem 'decidim-blogs'
 
 
 
