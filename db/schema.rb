@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_06_193556) do
+ActiveRecord::Schema.define(version: 2021_01_12_185611) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -1189,6 +1189,7 @@ ActiveRecord::Schema.define(version: 2021_01_06_193556) do
     t.datetime "updated_at", null: false
     t.jsonb "title", default: {}
     t.jsonb "description", default: {}
+    t.integer "height", default: 475, null: false
     t.index ["decidim_organization_id"], name: "decidim_navigation_maps_constraint_organization"
   end
 

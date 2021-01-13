@@ -24,8 +24,10 @@ gem "figaro"
 gem "decidim-elections"
 gem "decidim-templates"
 gem "decidim-calendar"
-#gem "decidim-process_groups_content_block" >> Disable due to the error when updating
-gem "decidim-navigation_maps", git: "https://github.com/Platoniq/decidim-module-navigation_maps"
+#gem "decidim-navigation_maps", git: "https://github.com/Platoniq/decidim-module-navigation_maps"#old version
+
+gem "decidim-navigation_maps", "~> 1.1.0"
+
 gem 'decidim-navbar_links', git: "https://github.com/OpenSourcePolitics/decidim-module-navbar_links", branch: "0.23-stable"
 gem 'decidim-pages'
 gem 'decidim-proposals'
