@@ -26,7 +26,7 @@ gem "decidim-templates"
 gem "decidim-calendar"
 #gem "decidim-navigation_maps", git: "https://github.com/Platoniq/decidim-module-navigation_maps"#old version
 
-gem "decidim-navigation_maps", "~> 1.1.0"
+gem "decidim-navigation_maps", "~> 1.1.1"
 
 gem 'decidim-navbar_links', git: "https://github.com/OpenSourcePolitics/decidim-module-navbar_links", branch: "0.23-stable"
 gem 'decidim-pages'

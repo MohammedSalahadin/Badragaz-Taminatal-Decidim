@@ -303,7 +303,7 @@ GEM
       jquery-tmpl-rails (~> 1.1)
       kaminari (~> 1.2, >= 1.2.1)
       searchlight (~> 4.1)
-    decidim-navigation_maps (1.1.0)
+    decidim-navigation_maps (1.1.1)
       decidim-admin (>= 0.22, < 0.24)
       decidim-core (>= 0.22, < 0.24)
     decidim-pages (0.23.1)
@@ -806,7 +806,7 @@ DEPENDENCIES
   decidim-dev (= 0.23.1)
   decidim-elections
   decidim-navbar_links!
-  decidim-navigation_maps (~> 1.1.0)
+  decidim-navigation_maps (~> 1.1.1)
   decidim-pages
   decidim-process_groups_content_block
   decidim-proposals
