@@ -30,7 +30,7 @@ gem "decidim-navigation_maps", "~> 1.1.1"
 
 gem 'decidim-navbar_links', git: "https://github.com/OpenSourcePolitics/decidim-module-navbar_links", branch: "0.23-stable"
 gem 'decidim-pages'
-gem 'decidim-proposals'
+gem "decidim-proposals"
 gem 'decidim-comments'
 #gem "decidim-plans"
 gem "decidim-process_groups_content_block"
