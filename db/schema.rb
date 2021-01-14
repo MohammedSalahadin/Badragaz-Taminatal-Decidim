@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_12_185611) do
+ActiveRecord::Schema.define(version: 2021_01_14_224045) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -403,6 +403,17 @@ ActiveRecord::Schema.define(version: 2021_01_12_185611) do
     t.index ["decidim_commentable_type", "decidim_commentable_id"], name: "decidim_comments_comment_commentable"
     t.index ["decidim_root_commentable_type", "decidim_root_commentable_id"], name: "decidim_comments_comment_root_commentable"
     t.index ["decidim_user_group_id"], name: "index_decidim_comments_comments_on_decidim_user_group_id"
+  end
+
+  create_table "decidim_comparative_stats_endpoints", force: :cascade do |t|
+    t.string "endpoint"
+    t.boolean "active"
+    t.bigint "decidim_organization_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "name"
+    t.string "api_version"
+    t.index ["decidim_organization_id"], name: "decidim_comparative_stats_constraint_organization"
   end
 
   create_table "decidim_components", id: :serial, force: :cascade do |t|
@@ -1861,6 +1872,7 @@ ActiveRecord::Schema.define(version: 2021_01_12_185611) do
   add_foreign_key "decidim_budgets_orders", "decidim_budgets_budgets"
   add_foreign_key "decidim_budgets_projects", "decidim_budgets_budgets"
   add_foreign_key "decidim_categorizations", "decidim_categories"
+  add_foreign_key "decidim_comparative_stats_endpoints", "decidim_organizations"
   add_foreign_key "decidim_consultations_response_groups", "decidim_consultations_questions", column: "decidim_consultations_questions_id"
   add_foreign_key "decidim_consultations_responses", "decidim_consultations_questions", column: "decidim_consultations_questions_id"
   add_foreign_key "decidim_consultations_responses", "decidim_consultations_response_groups"
