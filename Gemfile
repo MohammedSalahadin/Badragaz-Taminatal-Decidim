@@ -37,6 +37,8 @@ gem "decidim-process_groups_content_block"
 gem 'decidim-accountability'
 gem 'decidim-blogs'
 gem "decidim-comparative_stats", "~> 1.1.0"
+gem "decidim-api"
+#gem "decidim-term_customizer"
 
 
 group :development, :test do

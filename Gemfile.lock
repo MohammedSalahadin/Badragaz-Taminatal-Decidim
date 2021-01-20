@@ -816,6 +816,7 @@ DEPENDENCIES
   daemons
   decidim (= 0.23.1)
   decidim-accountability
+  decidim-api
   decidim-blogs
   decidim-calendar
   decidim-comments
